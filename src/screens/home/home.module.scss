@@ -1,0 +1,31 @@
+@import '@styles/tokens/breakpoints.scss';
+
+.books {
+  margin-top: var(--height-header);
+  padding: var(--size-static-48) 0;
+  .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 70%;
+    margin: 0 auto; 
+    gap: var(--size-static-20); 
+  }
+}
+@include media-query('b960') {
+  .books {
+   
+    .container {
+      grid-template-columns: 1fr 1fr;
+   
+    }
+  }
+}
+@include media-query('b560') {
+  .books {
+   
+    .container {
+      grid-template-columns: 1fr;
+   
+    }
+  }
+}

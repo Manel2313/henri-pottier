@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@screens/*": ["./screens/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@contexts/*": ["./contexts/*"],
+      "@styles/*": ["./styles/*"],
+      "@utils/*": ["./utils/*"],
+      "@icons/*": ["./icons/*"],
+      "@data/*": ["./data/*"],
+      "@context/*": ["./context/*"],
+      "@services/*": ["./services/*"],
+      "@mocks/*": ["./mocks/*"],
+      "@server/*": ["./server/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

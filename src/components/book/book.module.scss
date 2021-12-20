@@ -1,0 +1,48 @@
+
+.book {
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.3s;
+
+  border: 1px solid var(--grey000);
+  border-radius: var(--size-static-4);
+
+  &:hover {
+    box-shadow: 0 0px 5px 5px var(--grey000);
+
+    cursor: pointer;
+  }
+  .figure {
+    position: relative;
+    max-width: 100%;
+    height: 450px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .bookContent {
+    display: flex;
+    flex-direction: column;
+    padding: var(--size-static-16);
+    gap: var(--size-static-20);
+    .bookDescription {
+      display: -webkit-box;
+      overflow: hidden;
+  
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  
+    .bookPrice {
+      align-self: flex-end;
+  
+      font-weight: bold;
+    }
+  }
+
+
+
+}

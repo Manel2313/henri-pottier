@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+
+  background: var(--white000);;
+  box-shadow: 0px 2px 6px var(--grey000);;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--size-static-12) var(--size-static-48);
+
+    background: var(--white000);
+    
+    .headerLogo {
+      img {
+        height: 40px;
+      }
+    }
+
+    .headerEnd {
+      display: flex;
+      & > a {
+        font-size: var(--fontsize-14);
+        & > div {
+          text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+          &:before {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

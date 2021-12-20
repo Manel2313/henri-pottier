@@ -1,0 +1,16 @@
+$grid-breakpoints: (
+  'b0': '(max-width: 0px)',
+  'b560': '(max-width: 560px)',
+  'b960': '(max-width: 960px)',
+);
+//closed breackpoint
+@mixin media-query($key) {
+  $matched-breakpoint: map-get($grid-breakpoints, $key);
+  @if not $matched-breakpoint {
+    @warn #{ 'Breakpoint, ‘' + $key + '’ not found in `$gorko-config`. Make sure it’s set in the ‘breakpoints’ section.' };
+  } @else {
+    @media #{ $matched-breakpoint } {
+      @content;
+    }
+  }
+}

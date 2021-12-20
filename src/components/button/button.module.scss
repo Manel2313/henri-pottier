@@ -1,0 +1,14 @@
+.button {
+  padding: var(--size-static-8) var(--size-static-12);
+
+  border: none;
+  border-radius: var(--size-static-4);
+
+  background: var(--blue000);
+
+  color: var(--white000);
+  font-weight: bold;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
